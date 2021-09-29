@@ -1,0 +1,444 @@
+/* &display=swap&subset=cyrillic-ext */
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext");
+@font-face {
+	font-family: "Code Pro";
+	src: url("../fonts/Code-Pro-Bold.woff2") format("woff2"), url("../fonts/Code-Pro-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Code Pro";
+	src: url("../fonts/Code-Pro-Black.woff2") format("woff2"), url("../fonts/Code-Pro-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ------------------------------
+/* Отступы */
+/* По другому работают для строчного объекта*/
+
+/* Внутренние */
+/*
+padding
+Внутренний отступ элемента
+При указании поля в процентах, значение считается 
+от ширины родителя элемента.
+Свойство не наследуется.
+
+padding: со_всех_сторон;
+padding: сверху справа снизу слева;
+padding: сверху_снизу справа_слева;
+padding: сверху справа_слева снизу;
+
+*/
+
+/* Внешние */
+/*
+margin
+Внешний отступ элемента
+При указании поля в процентах, значение 
+считается от ширины родителя элемента.
+Свойство не наследуется.
+Значение может быть как положительным, 
+так и отрицательным числом.
+
+margin: со_всех_сторон;
+margin: сверху справа снизу слева;
+margin: сверху_снизу справа_слева;
+margin: сверху справа_слева снизу;
+*/
+
+/* .block {
+	background-color: green;
+
+	color: #fff;
+	font-size: 30px;
+	margin: 50px;
+	padding: 30px;
+}
+.inline {
+	background-color: #794f45;
+	color: #fff;
+	font-size: 30px;
+	width: 500px;
+	padding: 50px;
+	margin: 50px;
+}
+
+.image {
+	width: 50%;
+	padding: 50px;
+	background-color: #000;
+} */
+
+/*
+.block_2 {
+	background-color: #77608d;
+
+	color: #fff;
+	font-size: 50px;
+	padding: 50px;
+}
+.block_3 {
+	background-color: #794f45;
+	padding: 50px;
+
+	color: #fff;
+	font-size: 50px;
+	padding: 50px;
+}
+*/
+/* НЕ работают для строчного объекта*/
+/*
+width
+Устанавливает ширину блочных тегов и блочно-строчных
+Свойство не наследуется.
+width:100px;
+width:10%;
+*/
+
+/* .block {
+	 width: 500px;
+} */
+
+/*
+box-sizing
+Применяется для изменения алгоритма расчета ширины 
+и высоты элемента. 
+Свойство наследуется.
+content-box - Основывается на стандартах CSS, при этом 
+свойства width и height задают ширину и высоту контента
+ и не включают в себя значения отступов, полей и границ.
+border-box - Свойства width и height включают в себя 
+значения полей и границ, но не отступов (margin). Эта модель используется браузером Internet Exporer в режиме несовместимости.
+padding-box - Свойства width и height включают в себя
+ значения полей, но не отступов (margin) и границ (border). 
+
+*/
+
+/*
+ Центрирование объекта с помощью  margin со значениями auto:last-child
+ 1) Объект должен быть блочным
+ 2) Объект должен быть ограничен по ширине, быть уже чем родитель
+ 3) margin: 0px auto;
+*/
+
+/* .block {
+	margin: 0px auto;
+} */
+
+/*
+max-width
+Устанавливает максимальную ширину блочных 
+и блочно-строчных тегов
+
+min-width
+Устанавливает минимальную ширину блочных 
+и блочно-строчных тегов
+*/
+
+/* .block {
+	
+	max-width: 700px;
+	margin: 0px auto;
+	
+} */
+
+/*
+height:
+Устанавливает высоту блочных и блочно-строчных тегов
+Свойство не наследуется.
+height:100px;
+height:10%;
+
+min-height
+Свойство не наследуется.
+
+max-height
+Свойство не наследуется.
+*/
+/* 
+.block {
+	height: 500px;
+} */
+
+/*
+overflow 
+Управляет отображением содержания блочного элемента
+visible - Отображается все содержание элемента, даже за пределами установленной высоты и ширины. 
+hidden - Отображается только область внутри элемента, остальное будет скрыто.
+scroll - Всегда добавляются полосы прокрутки.
+auto - Полосы прокрутки добавляются только при необходимости.
+*/
+
+/* .block {
+	overflow: hidden;
+} */
+
+/*
+display:
+Многоцелевое свойство, которое определяет, как элемент должен быть показан в документе.
+Свойство не наследуется.
+
+block - Элемент показывается как блочный. Применение этого значения для встроенных элементов, например тега <span>, заставляет его вести подобно блокам — происходит перенос строк в начале и в конце содержимого. 											
+inline - Элемент отображается как встроенный. Использование блочных тегов, таких как <div> и <p>, автоматически создает перенос и показывает содержимое этих тегов с новой строки. Значение inline отменяет эту особенность, поэтому содержимое блочных элементов начинается с того места, где окончился предыдущий элемент. 											
+inline - block - Это значение генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу. Фактически такой элемент по своему действию похож на встраиваемые элементы (вроде тега <img>). При этом его внутренняя часть форматируется как блочный элемент, а сам элемент — как встроенный. 											
+none - Временно удаляет элемент из документа. Занимаемое им место не резервируется и веб-страница формируется так, словно элемента и не было. 
+*/
+
+/* .link {
+	font-size: 80px;
+	color: red;
+	margin: 0px 0px 100px 0px;
+	/* По умолчанию */
+/* display: inline; */
+/* } */
+
+/* .header { */
+/* По умолчанию */
+/* display: block; */
+/* } */
+/* .image {
+	/* По умолчанию */
+/* display: inline-block; */
+/* } */
+/* .text { */
+/* display: none; */
+/* font-size: 50px; */
+/* } */
+
+.block1 {
+	background-color: #b41936;
+	font-size: 40px;
+	color: #fff;
+	font-family: "Lato", serif;
+	font-style: italic;
+	font-weight: 400;
+	padding: 50px;
+	width: 50%;
+	margin: 0px auto 40px auto;
+}
+.text {
+	color: #ffff00;
+	line-height: 2;
+	text-align: justify;
+	text-indent: 10%;
+}
+.block2 {
+	background-color: #b41936;
+	font-size: 40px;
+	color: #fff;
+	text-decoration: underline;
+	font-family: "Lato", serif;
+	font-style: italic;
+	font-weight: 700;
+	text-indent: 10%;
+	padding: 20px 30px;
+	overflow: auto;
+	height: 300px;
+	margin: 0px 0px 40px 0px;
+}
+.block3 {
+	background-color: #b41936;
+	font-size: 40px;
+	color: #fff;
+	padding: 10px 20px;
+	text-transform: capitalize;
+	font-family: "Lato", serif;
+	font-style: italic;
+	font-weight: 900;
+	min-height: 100px;
+	max-width: 600px;
+	margin: 0px auto 40px 0px;
+	display: inline-block;
+}
+.block4 {
+	background-color: #b41936;
+	font-size: 40px;
+	color: #fff;
+	padding: 10px 20px;
+	font-family: "Lato", serif;
+	font-weight: 400;
+	max-width: 600px;
+	max-height: 500px;
+	text-transform: lowercase;
+	margin: 0px 0px 40px auto;
+	overflow: hidden;
+}
+.cnt {
+	background-color: #b41936;
+	font-size: 40px;
+	color: #fff;
+	margin: 0px 0px 40px 0px;
+	font-family: "Lato", serif;
+	font-style: italic;
+	font-weight: 900;
+}
+.block5 {
+	display: inline-block;
+	max-width: 300px;
+	margin: 0px 70px 0px 0px;
+}
+.block6 {
+	display: inline-block;
+	max-width: 300px;
+	margin: 0px 70px 0px 0px;
+}
+.block7 {
+	display: inline-block;
+	max-width: 300px;
+	margin: 0px 70px 0px 0px;
+}
+.menu {
+	background-color: #b41936;
+	font-size: 40px;
+	font-family: "Code Pro";
+	font-weight: 900;
+	color: #fff;
+	overflow: auto;
+	margin: 0px 0px 100px 0px;
+}
+.span1 {
+	min-height: 100%;
+	min-width: 100000px;
+	display: block;
+}
+.span2 {
+	display: block;
+	color: #008000;
+	margin: 40px 0px 59px 50px;
+}
+.span3 {
+	display: inline-block;
+	color: #221930;
+	padding: 0px 0px 0px 60px;
+}
+.block8 {
+	background-color: #b41936;
+	font-size: 40px;
+	color: #fff;
+	height: 100px;
+	font-family: "Code Pro";
+	font-weight: 700;
+	overflow: hidden;
+	margin: 0px 0px 100px 0px;
+}
+.imgb {
+	background-color: #008000;
+	padding: 15px;
+	margin: 0px 0px 50px 0px;
+	overflow: auto;
+	max-height: 500px;
+}
+.img {
+	max-width: 100%;
+	margin: 0px 0px 40px 0px;
+}
+.hello {
+	display: block;
+	margin: 0px 0px 10px 0px;
+	font-family: "Code Pro";
+	font-weight: 900;
+}
+.ptext {
+	background-color: #008000;
+	color: #000;
+	padding: 15px;
+	font-family: "Code Pro";
+	font-weight: 700;
+}
+.ctext1 {
+	display: inline-block;
+	max-height: 200px;
+	max-width: 200px;
+}
+.ctext2 {
+	display: inline-block;
+	max-height: 200px;
+	max-width: 200px;
+}
+.ctext3 {
+	display: inline-block;
+	max-height: 200px;
+	max-width: 200px;
+}
+.linkin {
+	margin: 0px 0px 30px 0px;
+}
+.fourfour {
+	display: inline-block;
+	background-color: #008000;
+	color: #fff;
+	max-width: 100px;
+	margin: 0px 30px 30px 0px;
+}
+.four {
+	padding: 10px;
+}
+.position {
+	background-color: #004000;
+	color: #fff;
+	margin: 0px 0px 20px 0px;
+	padding: 30px;
+}
+.slick {
+	background-color: #008000;
+	color: #fff;
+	padding: 30px;
+	margin: -100px 0px 30px 0px;
+}
+.big {
+	background-color: #f71212;
+	color: #fff;
+	display: block;
+	max-height: 200px;
+	overflow: auto;
+}
